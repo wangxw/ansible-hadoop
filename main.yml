@@ -1,0 +1,5 @@
+---
+- hosts: YS03
+  gather_facts: False
+  roles:
+    - sysinit 

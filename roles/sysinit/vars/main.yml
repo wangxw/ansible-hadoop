@@ -1,0 +1,25 @@
+---
+# Setting the value 0 in order to avoid swapping
+kernel_swappiness: 1
+
+#Disks list of datanodes
+data_disks:
+  - /dev/sdb1
+  - /dev/sdc1
+#Disk reserve space of percent,default is 5
+disk_reserve_percent: 1
+
+#Open file limits
+limits_nofile_hard: 65536
+limits_nofile_soft: 65536
+limits_nproc_soft: 10240
+limits_nproc_hard: 10240
+
+#hugepage memory 
+hugepage_defrag: never
+hugepage_enable: never
+
+#vfs cache pressure
+vfs_cache_pressure: 5
+
+

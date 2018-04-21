@@ -1,0 +1,936 @@
+18/03/31 22:00:31 INFO balancer.Balancer: Using a threshold of 5.0
+18/03/31 22:00:31 INFO balancer.Balancer: namenodes  = [hdfs://YS01:9000]
+18/03/31 22:00:31 INFO balancer.Balancer: parameters = Balancer.Parameters[BalancingPolicy.Node, threshold=5.0, number of nodes to be excluded = 0, number of nodes to be included = 0]
+Time Stamp               Iteration#  Bytes Already Moved  Bytes Left To Move  Bytes Being Moved
+18/03/31 22:00:31 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/03/31 22:00:32 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:00:32 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:00:32 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:00:32 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:00:32 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:00:32 INFO balancer.Balancer: Need to move 28.19 GB to make the cluster balanced.
+18/03/31 22:00:32 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:00:32 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:00:49 INFO balancer.Dispatcher: Successfully moved blk_1073770975_30178 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:00:49 INFO balancer.Dispatcher: Successfully moved blk_1073770977_30180 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:00:50 INFO balancer.Dispatcher: Successfully moved blk_1073770978_30181 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:00:50 INFO balancer.Dispatcher: Successfully moved blk_1073770979_30182 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:00:50 INFO balancer.Dispatcher: Successfully moved blk_1073770976_30179 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:01:07 PM          0              1.25 GB            28.19 GB              10 GB
+18/03/31 22:01:16 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:01:16 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:01:16 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:01:16 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:01:16 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:01:16 INFO balancer.Balancer: Need to move 26.93 GB to make the cluster balanced.
+18/03/31 22:01:16 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:01:16 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:01:32 INFO balancer.Dispatcher: Successfully moved blk_1073770792_29995 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:01:33 INFO balancer.Dispatcher: Successfully moved blk_1073770795_29998 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:01:33 INFO balancer.Dispatcher: Successfully moved blk_1073770791_29994 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:01:33 INFO balancer.Dispatcher: Successfully moved blk_1073770794_29997 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:01:33 INFO balancer.Dispatcher: Successfully moved blk_1073770793_29996 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:01:51 PM          1              2.50 GB            26.93 GB              10 GB
+18/03/31 22:02:00 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:02:00 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:02:00 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:02:00 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:02:00 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:02:00 INFO balancer.Balancer: Need to move 25.48 GB to make the cluster balanced.
+18/03/31 22:02:00 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:02:00 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:02:16 INFO balancer.Dispatcher: Successfully moved blk_1073770888_30091 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:02:17 INFO balancer.Dispatcher: Successfully moved blk_1073770889_30092 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:02:17 INFO balancer.Dispatcher: Successfully moved blk_1073770891_30094 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:02:17 INFO balancer.Dispatcher: Successfully moved blk_1073770890_30093 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:02:17 INFO balancer.Dispatcher: Successfully moved blk_1073770892_30095 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:02:35 PM          2              3.75 GB            25.48 GB              10 GB
+18/03/31 22:02:44 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:02:44 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:02:44 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:02:44 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:02:44 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:02:44 INFO balancer.Balancer: Need to move 24.22 GB to make the cluster balanced.
+18/03/31 22:02:44 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:02:44 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:03:01 INFO balancer.Dispatcher: Successfully moved blk_1073770972_30175 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:02 INFO balancer.Dispatcher: Successfully moved blk_1073770970_30173 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:02 INFO balancer.Dispatcher: Successfully moved blk_1073770969_30172 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:02 INFO balancer.Dispatcher: Successfully moved blk_1073770971_30174 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:02 INFO balancer.Dispatcher: Successfully moved blk_1073770968_30171 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:03:19 PM          3                 5 GB            24.22 GB              10 GB
+18/03/31 22:03:28 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:03:28 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:03:28 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:03:28 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:03:28 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:03:28 INFO balancer.Balancer: Need to move 22.96 GB to make the cluster balanced.
+18/03/31 22:03:28 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:03:28 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:03:46 INFO balancer.Dispatcher: Successfully moved blk_1073770953_30156 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:47 INFO balancer.Dispatcher: Successfully moved blk_1073770950_30153 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:47 INFO balancer.Dispatcher: Successfully moved blk_1073770952_30155 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:47 INFO balancer.Dispatcher: Successfully moved blk_1073770949_30152 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:03:47 INFO balancer.Dispatcher: Successfully moved blk_1073770951_30154 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:04:03 PM          4              6.25 GB            22.96 GB              10 GB
+18/03/31 22:04:12 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:04:12 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:04:12 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:04:12 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:04:12 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:04:12 INFO balancer.Balancer: Need to move 21.70 GB to make the cluster balanced.
+18/03/31 22:04:12 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:04:12 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:04:21 INFO balancer.Dispatcher: Successfully moved blk_1073771073_30276 with size=142010368 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:04:28 INFO balancer.Dispatcher: Successfully moved blk_1073771072_30275 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:04:28 INFO balancer.Dispatcher: Successfully moved blk_1073771069_30272 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:04:29 INFO balancer.Dispatcher: Successfully moved blk_1073771071_30274 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:04:29 INFO balancer.Dispatcher: Successfully moved blk_1073771070_30273 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:04:47 PM          5              7.38 GB            21.70 GB              10 GB
+18/03/31 22:04:56 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:04:56 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:04:56 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:04:56 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:04:56 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:04:56 INFO balancer.Balancer: Need to move 20.56 GB to make the cluster balanced.
+18/03/31 22:04:56 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:04:56 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:05:12 INFO balancer.Dispatcher: Successfully moved blk_1073770852_30055 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:12 INFO balancer.Dispatcher: Successfully moved blk_1073770853_30056 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:12 INFO balancer.Dispatcher: Successfully moved blk_1073770854_30057 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:13 INFO balancer.Dispatcher: Successfully moved blk_1073770855_30058 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:13 INFO balancer.Dispatcher: Successfully moved blk_1073770856_30059 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:05:31 PM          6              8.63 GB            20.56 GB              10 GB
+18/03/31 22:05:40 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:05:40 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:05:40 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:05:40 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:05:40 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:05:40 INFO balancer.Balancer: Need to move 19.30 GB to make the cluster balanced.
+18/03/31 22:05:40 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:05:40 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:05:40 INFO balancer.Dispatcher: Successfully moved blk_1073771319_30522 with size=352 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:40 INFO balancer.Dispatcher: Successfully moved blk_1073771299_30502 with size=282779 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:40 INFO balancer.Dispatcher: Successfully moved blk_1073771321_30524 with size=105783 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:40 INFO balancer.Dispatcher: Successfully moved blk_1073771300_30503 with size=105790 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:40 INFO balancer.Dispatcher: Successfully moved blk_1073771298_30501 with size=356 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:40 INFO balancer.Dispatcher: Successfully moved blk_1073771320_30523 with size=40350 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:56 INFO balancer.Dispatcher: Successfully moved blk_1073770775_29978 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:56 INFO balancer.Dispatcher: Successfully moved blk_1073770774_29977 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:56 INFO balancer.Dispatcher: Successfully moved blk_1073770777_29980 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:57 INFO balancer.Dispatcher: Successfully moved blk_1073770773_29976 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:05:57 INFO balancer.Dispatcher: Successfully moved blk_1073770776_29979 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:06:15 PM          7              9.88 GB            19.30 GB              10 GB
+18/03/31 22:06:24 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:06:24 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:06:24 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:06:24 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:06:24 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:06:24 INFO balancer.Balancer: Need to move 18.04 GB to make the cluster balanced.
+18/03/31 22:06:24 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:06:24 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:06:24 WARN balancer.Dispatcher: Failed to move blk_1073771320_30523 with size=40350 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771320_30523 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:24 WARN balancer.Dispatcher: Failed to move blk_1073771319_30522 with size=352 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771319_30522 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:24 WARN balancer.Dispatcher: Failed to move blk_1073771321_30524 with size=105783 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771321_30524 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:24 WARN balancer.Dispatcher: Failed to move blk_1073771300_30503 with size=105790 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771300_30503 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:24 WARN balancer.Dispatcher: Failed to move blk_1073771299_30502 with size=282779 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771299_30502 received exception java.io.EOFException: Premature EOF: no length prefix available
+Mar 31, 2018 10:06:29 PM          8              9.88 GB            18.04 GB              10 GB
+18/03/31 22:06:38 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:06:38 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:06:38 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:06:38 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:06:38 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:06:38 INFO balancer.Balancer: Need to move 18.04 GB to make the cluster balanced.
+18/03/31 22:06:38 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:06:38 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:06:38 WARN balancer.Dispatcher: Failed to move blk_1073771321_30524 with size=105783 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771321_30524 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:38 WARN balancer.Dispatcher: Failed to move blk_1073771320_30523 with size=40350 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771320_30523 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:38 INFO balancer.Dispatcher: Successfully moved blk_1073771528_30731 with size=40033 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:06:38 INFO balancer.Dispatcher: Successfully moved blk_1073771529_30732 with size=105774 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:06:38 INFO balancer.Dispatcher: Successfully moved blk_1073771527_30730 with size=348 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:06:38 PM          9              9.88 GB            18.04 GB              10 GB
+18/03/31 22:06:47 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:06:47 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:06:47 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:06:47 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:06:47 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:06:47 INFO balancer.Balancer: Need to move 18.04 GB to make the cluster balanced.
+18/03/31 22:06:47 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:06:47 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:06:47 WARN balancer.Dispatcher: Failed to move blk_1073771320_30523 with size=40350 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771320_30523 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:47 WARN balancer.Dispatcher: Failed to move blk_1073771319_30522 with size=352 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771319_30522 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:47 WARN balancer.Dispatcher: Failed to move blk_1073771300_30503 with size=105790 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771300_30503 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:47 WARN balancer.Dispatcher: Failed to move blk_1073771299_30502 with size=282779 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771299_30502 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:06:47 WARN balancer.Dispatcher: Failed to move blk_1073771321_30524 with size=105783 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771321_30524 received exception java.io.EOFException: Premature EOF: no length prefix available
+Mar 31, 2018 10:06:47 PM         10              9.88 GB            18.04 GB              10 GB
+18/03/31 22:06:56 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:06:56 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:06:56 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:06:56 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:06:56 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:06:56 INFO balancer.Balancer: Need to move 18.04 GB to make the cluster balanced.
+18/03/31 22:06:56 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:06:56 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:07:13 INFO balancer.Dispatcher: Successfully moved blk_1073771065_30268 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:07:14 INFO balancer.Dispatcher: Successfully moved blk_1073771064_30267 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:07:14 INFO balancer.Dispatcher: Successfully moved blk_1073771066_30269 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:07:14 INFO balancer.Dispatcher: Successfully moved blk_1073771067_30270 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:07:14 INFO balancer.Dispatcher: Successfully moved blk_1073771068_30271 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:07:31 PM         11             11.13 GB            18.04 GB              10 GB
+18/03/31 22:07:40 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:07:40 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:07:40 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:07:40 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:07:40 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:07:40 INFO balancer.Balancer: Need to move 16.78 GB to make the cluster balanced.
+18/03/31 22:07:40 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:07:40 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:07:40 WARN balancer.Dispatcher: Failed to move blk_1073771068_30271 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771068_30271 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:40 WARN balancer.Dispatcher: Failed to move blk_1073771065_30268 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771065_30268 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:40 WARN balancer.Dispatcher: Failed to move blk_1073771064_30267 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771064_30267 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:40 WARN balancer.Dispatcher: Failed to move blk_1073771067_30270 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771067_30270 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:40 WARN balancer.Dispatcher: Failed to move blk_1073771066_30269 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771066_30269 received exception java.io.EOFException: Premature EOF: no length prefix available
+Mar 31, 2018 10:07:42 PM         12             11.13 GB            16.78 GB              10 GB
+18/03/31 22:07:52 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:07:52 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:07:52 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:07:52 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:07:52 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:07:52 INFO balancer.Balancer: Need to move 16.78 GB to make the cluster balanced.
+18/03/31 22:07:52 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:07:52 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:07:52 WARN balancer.Dispatcher: Failed to move blk_1073771527_30730 with size=348 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771527_30730 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:52 WARN balancer.Dispatcher: Failed to move blk_1073771528_30731 with size=40033 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771528_30731 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:52 WARN balancer.Dispatcher: Failed to move blk_1073771529_30732 with size=105774 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010: block move is failed: opReplaceBlock BP-212131561-192.168.1.101-1468662359780:blk_1073771529_30732 received exception java.io.EOFException: Premature EOF: no length prefix available
+18/03/31 22:07:58 INFO balancer.Dispatcher: Successfully moved blk_1073770958_30161 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:07:58 INFO balancer.Dispatcher: Successfully moved blk_1073770957_30160 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:08:24 PM         13             11.63 GB            16.78 GB              10 GB
+18/03/31 22:08:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:08:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:08:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:08:33 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:08:33 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:08:33 INFO balancer.Balancer: Need to move 16.12 GB to make the cluster balanced.
+18/03/31 22:08:33 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:08:33 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:08:50 INFO balancer.Dispatcher: Successfully moved blk_1073771038_30241 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:08:50 INFO balancer.Dispatcher: Successfully moved blk_1073771035_30238 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:08:50 INFO balancer.Dispatcher: Successfully moved blk_1073771034_30237 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:08:50 INFO balancer.Dispatcher: Successfully moved blk_1073771036_30239 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:08:51 INFO balancer.Dispatcher: Successfully moved blk_1073771037_30240 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:09:08 PM         14             12.88 GB            16.12 GB              10 GB
+18/03/31 22:09:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:09:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:09:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:09:17 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:09:17 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:09:17 INFO balancer.Balancer: Need to move 14.86 GB to make the cluster balanced.
+18/03/31 22:09:17 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:09:17 INFO balancer.Balancer: Will move 10 GB in this iteration
+Mar 31, 2018 10:09:17 PM         15             12.88 GB            14.86 GB              10 GB
+18/03/31 22:09:26 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:09:26 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:09:26 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:09:26 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:09:26 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:09:26 INFO balancer.Balancer: Need to move 14.86 GB to make the cluster balanced.
+18/03/31 22:09:26 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:09:26 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:09:42 INFO balancer.Dispatcher: Successfully moved blk_1073770967_30170 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:09:42 INFO balancer.Dispatcher: Successfully moved blk_1073770965_30168 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:09:43 INFO balancer.Dispatcher: Successfully moved blk_1073770973_30176 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:09:43 INFO balancer.Dispatcher: Successfully moved blk_1073770966_30169 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:09:43 INFO balancer.Dispatcher: Successfully moved blk_1073770974_30177 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:10:01 PM         16             14.13 GB            14.86 GB              10 GB
+18/03/31 22:10:10 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:10:10 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:10:10 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:10:10 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:10:10 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:10:10 INFO balancer.Balancer: Need to move 13.60 GB to make the cluster balanced.
+18/03/31 22:10:10 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:10:10 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:10:20 INFO balancer.Dispatcher: Successfully moved blk_1073771875_31078 with size=194693632 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:10:23 INFO balancer.Dispatcher: Successfully moved blk_1073771874_31077 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:10:23 INFO balancer.Dispatcher: Successfully moved blk_1073771872_31075 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:10:23 INFO balancer.Dispatcher: Successfully moved blk_1073771873_31076 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:10:23 INFO balancer.Dispatcher: Successfully moved blk_1073771041_30244 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:10:45 PM         17             15.31 GB            13.60 GB              10 GB
+18/03/31 22:10:54 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:10:54 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:10:54 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:10:54 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:10:54 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:10:54 INFO balancer.Balancer: Need to move 12.41 GB to make the cluster balanced.
+18/03/31 22:10:54 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:10:54 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:11:10 INFO balancer.Dispatcher: Successfully moved blk_1073770875_30078 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:10 INFO balancer.Dispatcher: Successfully moved blk_1073770872_30075 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:11 INFO balancer.Dispatcher: Successfully moved blk_1073770871_30074 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:11 INFO balancer.Dispatcher: Successfully moved blk_1073770873_30076 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:11 INFO balancer.Dispatcher: Successfully moved blk_1073770874_30077 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:11:29 PM         18             16.56 GB            12.41 GB              10 GB
+18/03/31 22:11:38 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:11:38 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:11:38 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:11:38 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:11:38 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:11:38 INFO balancer.Balancer: Need to move 11.15 GB to make the cluster balanced.
+18/03/31 22:11:38 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:11:38 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:11:56 INFO balancer.Dispatcher: Successfully moved blk_1073771060_30263 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:57 INFO balancer.Dispatcher: Successfully moved blk_1073771063_30266 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:57 INFO balancer.Dispatcher: Successfully moved blk_1073771062_30265 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:57 INFO balancer.Dispatcher: Successfully moved blk_1073771059_30262 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:11:57 INFO balancer.Dispatcher: Successfully moved blk_1073771061_30264 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:12:13 PM         19             17.81 GB            11.15 GB              10 GB
+18/03/31 22:12:22 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:12:22 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:12:22 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:12:22 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:12:22 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:12:22 INFO balancer.Balancer: Need to move 9.89 GB to make the cluster balanced.
+18/03/31 22:12:22 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:12:22 INFO balancer.Balancer: Will move 10 GB in this iteration
+Mar 31, 2018 10:12:22 PM         20             17.81 GB             9.89 GB              10 GB
+18/03/31 22:12:31 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:12:31 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:12:31 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:12:31 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:12:31 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:12:31 INFO balancer.Balancer: Need to move 9.89 GB to make the cluster balanced.
+18/03/31 22:12:31 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:12:31 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:12:47 INFO balancer.Dispatcher: Successfully moved blk_1073771011_30214 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:12:48 INFO balancer.Dispatcher: Successfully moved blk_1073771010_30213 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:12:48 INFO balancer.Dispatcher: Successfully moved blk_1073771012_30215 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:12:48 INFO balancer.Dispatcher: Successfully moved blk_1073771013_30216 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:12:48 INFO balancer.Dispatcher: Successfully moved blk_1073771009_30212 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:13:06 PM         21             19.06 GB             9.89 GB              10 GB
+18/03/31 22:13:15 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:13:15 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:13:15 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:13:15 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:13:15 INFO balancer.Balancer: 0 underutilized: []
+18/03/31 22:13:15 INFO balancer.Balancer: Need to move 8.63 GB to make the cluster balanced.
+18/03/31 22:13:15 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK
+18/03/31 22:13:15 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:13:33 INFO balancer.Dispatcher: Successfully moved blk_1073770726_29929 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:13:33 INFO balancer.Dispatcher: Successfully moved blk_1073770723_29926 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:13:33 INFO balancer.Dispatcher: Successfully moved blk_1073770724_29927 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:13:33 INFO balancer.Dispatcher: Successfully moved blk_1073770722_29925 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+18/03/31 22:13:34 INFO balancer.Dispatcher: Successfully moved blk_1073770725_29928 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.22:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:13:50 PM         22             20.31 GB             8.63 GB              10 GB
+18/03/31 22:13:59 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:13:59 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:13:59 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:13:59 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:13:59 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:13:59 INFO balancer.Balancer: Need to move 49.51 GB to make the cluster balanced.
+18/03/31 22:13:59 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:13:59 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:13:59 INFO balancer.Dispatcher: Successfully moved blk_1073771151_30354 with size=243 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:14:26 INFO balancer.Dispatcher: Successfully moved blk_1073771055_30258 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:14:27 INFO balancer.Dispatcher: Successfully moved blk_1073771056_30259 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:14:27 INFO balancer.Dispatcher: Successfully moved blk_1073771057_30260 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:14:27 INFO balancer.Dispatcher: Successfully moved blk_1073771054_30257 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:14:27 INFO balancer.Dispatcher: Successfully moved blk_1073771058_30261 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:14:34 PM         23             21.56 GB            49.51 GB              10 GB
+18/03/31 22:14:43 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:14:43 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:14:43 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:14:43 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:14:43 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:14:43 INFO balancer.Balancer: Need to move 47.72 GB to make the cluster balanced.
+18/03/31 22:14:43 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:14:43 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:15:10 INFO balancer.Dispatcher: Successfully moved blk_1073770798_30001 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:11 INFO balancer.Dispatcher: Successfully moved blk_1073770797_30000 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:11 INFO balancer.Dispatcher: Successfully moved blk_1073770789_29992 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:12 INFO balancer.Dispatcher: Successfully moved blk_1073770790_29993 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:12 INFO balancer.Dispatcher: Successfully moved blk_1073770796_29999 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:15:18 PM         24             22.81 GB            47.72 GB              10 GB
+18/03/31 22:15:27 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:15:27 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:15:27 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:15:27 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:15:27 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:15:27 INFO balancer.Balancer: Need to move 47.28 GB to make the cluster balanced.
+18/03/31 22:15:27 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:15:27 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:15:27 INFO balancer.Dispatcher: Successfully moved blk_1073771450_30653 with size=18 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:27 INFO balancer.Dispatcher: Successfully moved blk_1073771346_30549 with size=24 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:30 INFO balancer.Dispatcher: Successfully moved blk_1073771452_30655 with size=54 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:30 INFO balancer.Dispatcher: Successfully moved blk_1073771338_30541 with size=36 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:31 INFO balancer.Dispatcher: Successfully moved blk_1073771306_30509 with size=50000000 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:34 INFO balancer.Dispatcher: Successfully moved blk_1073771353_30556 with size=37957461 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:35 INFO balancer.Dispatcher: Successfully moved blk_1073771307_30510 with size=50000000 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:41 INFO balancer.Dispatcher: Successfully moved blk_1073771248_30451 with size=168161792 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:15:45 INFO balancer.Dispatcher: Successfully moved blk_1073771249_30452 with size=168161792 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:47 INFO balancer.Dispatcher: Successfully moved blk_1073771454_30657 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:47 INFO balancer.Dispatcher: Successfully moved blk_1073771352_30555 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:15:49 INFO balancer.Dispatcher: Successfully moved blk_1073771247_30450 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+Mar 31, 2018 10:16:10 PM         25             24.01 GB            47.28 GB              10 GB
+18/03/31 22:16:19 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:16:19 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:16:19 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:16:19 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:16:19 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:16:19 INFO balancer.Balancer: Need to move 46.23 GB to make the cluster balanced.
+18/03/31 22:16:19 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:16:19 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:16:19 INFO balancer.Dispatcher: Successfully moved blk_1073771501_30704 with size=50000 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:16:19 INFO balancer.Dispatcher: Successfully moved blk_1073771499_30702 with size=50000 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:16:20 INFO balancer.Dispatcher: Successfully moved blk_1073771455_30658 with size=98156544 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:16:30 INFO balancer.Dispatcher: Successfully moved blk_1073771242_30445 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:16:32 INFO balancer.Dispatcher: Successfully moved blk_1073771245_30448 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:16:38 INFO balancer.Dispatcher: Successfully moved blk_1073771243_30446 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:16:38 INFO balancer.Dispatcher: Successfully moved blk_1073771246_30449 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:16:40 INFO balancer.Dispatcher: Successfully moved blk_1073771244_30447 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:16:55 PM         26             25.35 GB            46.23 GB              10 GB
+18/03/31 22:17:04 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:17:04 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:17:04 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:17:04 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:17:04 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:17:04 INFO balancer.Balancer: Need to move 46.52 GB to make the cluster balanced.
+18/03/31 22:17:04 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:17:04 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:17:20 INFO balancer.Dispatcher: Successfully moved blk_1073771240_30443 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:17:22 INFO balancer.Dispatcher: Successfully moved blk_1073771238_30441 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:17:23 INFO balancer.Dispatcher: Successfully moved blk_1073771237_30440 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:17:23 INFO balancer.Dispatcher: Successfully moved blk_1073771241_30444 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:17:24 INFO balancer.Dispatcher: Successfully moved blk_1073771239_30442 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:17:39 PM         27             26.60 GB            46.52 GB              10 GB
+18/03/31 22:17:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:17:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:17:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:17:49 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:17:49 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:17:49 INFO balancer.Balancer: Need to move 45.39 GB to make the cluster balanced.
+18/03/31 22:17:49 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:17:49 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:18:01 INFO balancer.Dispatcher: Successfully moved blk_1073771235_30438 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:18:03 INFO balancer.Dispatcher: Successfully moved blk_1073771234_30437 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:18:05 INFO balancer.Dispatcher: Successfully moved blk_1073770463_29666 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:18:05 INFO balancer.Dispatcher: Successfully moved blk_1073771236_30439 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:18:05 INFO balancer.Dispatcher: Successfully moved blk_1073771233_30436 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+Mar 31, 2018 10:18:24 PM         28             27.85 GB            45.39 GB              10 GB
+18/03/31 22:18:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:18:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:18:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:18:33 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:18:33 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:18:33 INFO balancer.Balancer: Need to move 43.65 GB to make the cluster balanced.
+18/03/31 22:18:33 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:18:33 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:19:01 INFO balancer.Dispatcher: Successfully moved blk_1073770905_30108 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:01 INFO balancer.Dispatcher: Successfully moved blk_1073770903_30106 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:01 INFO balancer.Dispatcher: Successfully moved blk_1073770904_30107 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:02 INFO balancer.Dispatcher: Successfully moved blk_1073770901_30104 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:03 INFO balancer.Dispatcher: Successfully moved blk_1073770902_30105 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:19:08 PM         29             29.10 GB            43.65 GB              10 GB
+18/03/31 22:19:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:19:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:19:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:19:17 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:19:17 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:19:17 INFO balancer.Balancer: Need to move 43.13 GB to make the cluster balanced.
+18/03/31 22:19:17 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:19:17 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:19:46 INFO balancer.Dispatcher: Successfully moved blk_1073770848_30051 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:47 INFO balancer.Dispatcher: Successfully moved blk_1073770851_30054 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:47 INFO balancer.Dispatcher: Successfully moved blk_1073770849_30052 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:48 INFO balancer.Dispatcher: Successfully moved blk_1073770857_30060 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:19:48 INFO balancer.Dispatcher: Successfully moved blk_1073770850_30053 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:19:52 PM         30             30.35 GB            43.13 GB              10 GB
+18/03/31 22:20:01 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:20:01 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:20:01 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:20:01 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:20:01 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:20:01 INFO balancer.Balancer: Need to move 42.13 GB to make the cluster balanced.
+18/03/31 22:20:01 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:20:01 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:20:15 INFO balancer.Dispatcher: Successfully moved blk_1073771231_30434 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:20:16 INFO balancer.Dispatcher: Successfully moved blk_1073771228_30431 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:16 INFO balancer.Dispatcher: Successfully moved blk_1073771232_30435 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:17 INFO balancer.Dispatcher: Successfully moved blk_1073771229_30432 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:20:19 INFO balancer.Dispatcher: Successfully moved blk_1073771230_30433 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:20:36 PM         31             31.60 GB            42.13 GB              10 GB
+18/03/31 22:20:45 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:20:45 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:20:45 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:20:45 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:20:45 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:20:45 INFO balancer.Balancer: Need to move 40.85 GB to make the cluster balanced.
+18/03/31 22:20:45 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:20:45 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073772820_32023 with size=302 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073773141_32344 with size=218 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073772458_31661 with size=4 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073772792_31995 with size=14 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073772881_32084 with size=27543 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073772889_32092 with size=10167 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:45 INFO balancer.Dispatcher: Successfully moved blk_1073772190_31393 with size=12 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:51 INFO balancer.Dispatcher: Successfully moved blk_1073772229_31432 with size=124649738 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:52 INFO balancer.Dispatcher: Successfully moved blk_1073772186_31389 with size=124649738 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:20:52 INFO balancer.Dispatcher: Successfully moved blk_1073772098_31301 with size=168161792 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:20:55 INFO balancer.Dispatcher: Successfully moved blk_1073772099_31302 with size=168161792 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:20:55 INFO balancer.Dispatcher: Successfully moved blk_1073772097_31300 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+Mar 31, 2018 10:21:20 PM         32             32.39 GB            40.85 GB              10 GB
+18/03/31 22:21:29 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:21:29 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:21:29 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:21:29 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:21:29 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:21:29 INFO balancer.Balancer: Need to move 39.48 GB to make the cluster balanced.
+18/03/31 22:21:29 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:21:29 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:21:58 INFO balancer.Dispatcher: Successfully moved blk_1073770812_30015 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:21:58 INFO balancer.Dispatcher: Successfully moved blk_1073770811_30014 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:21:58 INFO balancer.Dispatcher: Successfully moved blk_1073770810_30013 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:21:59 INFO balancer.Dispatcher: Successfully moved blk_1073770814_30017 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:21:59 INFO balancer.Dispatcher: Successfully moved blk_1073770813_30016 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:22:04 PM         33             33.64 GB            39.48 GB              10 GB
+18/03/31 22:22:13 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:22:13 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:22:14 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:22:14 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:22:14 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:22:14 INFO balancer.Balancer: Need to move 39.01 GB to make the cluster balanced.
+18/03/31 22:22:14 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:22:14 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:22:44 INFO balancer.Dispatcher: Successfully moved blk_1073770762_29965 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:22:44 INFO balancer.Dispatcher: Successfully moved blk_1073770758_29961 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:22:45 INFO balancer.Dispatcher: Successfully moved blk_1073770761_29964 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:22:45 INFO balancer.Dispatcher: Successfully moved blk_1073770759_29962 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:22:45 INFO balancer.Dispatcher: Successfully moved blk_1073770760_29963 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:22:49 PM         34             34.89 GB            39.01 GB              10 GB
+18/03/31 22:22:58 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:22:58 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:22:58 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:22:58 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:22:58 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:22:58 INFO balancer.Balancer: Need to move 38.38 GB to make the cluster balanced.
+18/03/31 22:22:58 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:22:58 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:23:27 INFO balancer.Dispatcher: Successfully moved blk_1073770898_30101 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:23:28 INFO balancer.Dispatcher: Successfully moved blk_1073770896_30099 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:23:28 INFO balancer.Dispatcher: Successfully moved blk_1073770899_30102 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:23:28 INFO balancer.Dispatcher: Successfully moved blk_1073770900_30103 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:23:28 INFO balancer.Dispatcher: Successfully moved blk_1073770897_30100 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:23:33 PM         35             36.14 GB            38.38 GB              10 GB
+18/03/31 22:23:42 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:23:42 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:23:42 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:23:42 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:23:42 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:23:42 INFO balancer.Balancer: Need to move 37.64 GB to make the cluster balanced.
+18/03/31 22:23:42 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:23:42 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:23:52 INFO balancer.Dispatcher: Successfully moved blk_1073771223_30426 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:23:53 INFO balancer.Dispatcher: Successfully moved blk_1073771227_30430 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:23:53 INFO balancer.Dispatcher: Successfully moved blk_1073771225_30428 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:23:59 INFO balancer.Dispatcher: Successfully moved blk_1073771226_30429 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:24:00 INFO balancer.Dispatcher: Successfully moved blk_1073771224_30427 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:24:17 PM         36             37.39 GB            37.64 GB              10 GB
+18/03/31 22:24:26 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:24:26 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:24:26 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:24:26 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:24:26 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:24:26 INFO balancer.Balancer: Need to move 36.58 GB to make the cluster balanced.
+18/03/31 22:24:26 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:24:26 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:24:38 INFO balancer.Dispatcher: Successfully moved blk_1073771219_30422 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:24:39 INFO balancer.Dispatcher: Successfully moved blk_1073771221_30424 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:24:41 INFO balancer.Dispatcher: Successfully moved blk_1073771218_30421 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:24:41 INFO balancer.Dispatcher: Successfully moved blk_1073771222_30425 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:24:41 INFO balancer.Dispatcher: Successfully moved blk_1073771220_30423 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:25:01 PM         37             38.64 GB            36.58 GB              10 GB
+18/03/31 22:25:10 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:25:10 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:25:10 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:25:10 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:25:10 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:25:10 INFO balancer.Balancer: Need to move 34.87 GB to make the cluster balanced.
+18/03/31 22:25:10 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:25:10 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:25:21 INFO balancer.Dispatcher: Successfully moved blk_1073771214_30417 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:25:22 INFO balancer.Dispatcher: Successfully moved blk_1073771213_30416 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:25:22 INFO balancer.Dispatcher: Successfully moved blk_1073771217_30420 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:25:27 INFO balancer.Dispatcher: Successfully moved blk_1073771215_30418 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:25:27 INFO balancer.Dispatcher: Successfully moved blk_1073771216_30419 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:25:45 PM         38             39.89 GB            34.87 GB              10 GB
+18/03/31 22:25:54 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:25:54 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:25:54 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:25:54 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:25:54 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:25:54 INFO balancer.Balancer: Need to move 33.08 GB to make the cluster balanced.
+18/03/31 22:25:54 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:25:54 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:25:58 INFO balancer.Dispatcher: Successfully moved blk_1073771212_30415 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:26:15 INFO balancer.Dispatcher: Successfully moved blk_1073770825_30028 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:26:17 INFO balancer.Dispatcher: Successfully moved blk_1073770817_30020 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:26:17 INFO balancer.Dispatcher: Successfully moved blk_1073770824_30027 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:26:18 INFO balancer.Dispatcher: Successfully moved blk_1073770823_30026 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:26:28 PM         39             41.14 GB            33.08 GB              10 GB
+18/03/31 22:26:37 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:26:37 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:26:37 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:26:37 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:26:37 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:26:37 INFO balancer.Balancer: Need to move 32.36 GB to make the cluster balanced.
+18/03/31 22:26:37 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:26:37 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:26:46 INFO balancer.Dispatcher: Successfully moved blk_1073770633_29836 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:26:46 INFO balancer.Dispatcher: Successfully moved blk_1073770635_29838 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:26:56 INFO balancer.Dispatcher: Successfully moved blk_1073770636_29839 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:26:57 INFO balancer.Dispatcher: Successfully moved blk_1073770632_29835 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:26:58 INFO balancer.Dispatcher: Successfully moved blk_1073770634_29837 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:27:12 PM         40             42.39 GB            32.36 GB              10 GB
+18/03/31 22:27:21 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:27:21 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:27:21 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:27:21 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:27:21 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:27:21 INFO balancer.Balancer: Need to move 30.96 GB to make the cluster balanced.
+18/03/31 22:27:21 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:27:21 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:27:34 INFO balancer.Dispatcher: Successfully moved blk_1073772094_31297 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:27:35 INFO balancer.Dispatcher: Successfully moved blk_1073772095_31298 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:27:35 INFO balancer.Dispatcher: Successfully moved blk_1073772092_31295 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:27:36 INFO balancer.Dispatcher: Successfully moved blk_1073772093_31296 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:27:42 INFO balancer.Dispatcher: Successfully moved blk_1073772096_31299 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:27:56 PM         41             43.64 GB            30.96 GB              10 GB
+18/03/31 22:28:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:28:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:28:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:28:05 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:28:05 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:28:05 INFO balancer.Balancer: Need to move 30.43 GB to make the cluster balanced.
+18/03/31 22:28:05 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:28:05 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:28:15 INFO balancer.Dispatcher: Successfully moved blk_1073770874_30077 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:28:15 INFO balancer.Dispatcher: Successfully moved blk_1073770873_30076 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:28:28 INFO balancer.Dispatcher: Successfully moved blk_1073771052_30255 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:28:28 INFO balancer.Dispatcher: Successfully moved blk_1073771051_30254 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:28:29 INFO balancer.Dispatcher: Successfully moved blk_1073771053_30256 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:28:40 PM         42             44.89 GB            30.43 GB              10 GB
+18/03/31 22:28:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:28:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:28:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:28:49 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:28:49 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:28:49 INFO balancer.Balancer: Need to move 29.11 GB to make the cluster balanced.
+18/03/31 22:28:49 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:28:49 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:29:13 INFO balancer.Dispatcher: Successfully moved blk_1073770749_29952 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:16 INFO balancer.Dispatcher: Successfully moved blk_1073770754_29957 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:16 INFO balancer.Dispatcher: Successfully moved blk_1073770753_29956 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:17 INFO balancer.Dispatcher: Successfully moved blk_1073770752_29955 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:19 INFO balancer.Dispatcher: Successfully moved blk_1073770750_29953 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:29:24 PM         43             46.14 GB            29.11 GB              10 GB
+18/03/31 22:29:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:29:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:29:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:29:33 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:29:33 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:29:33 INFO balancer.Balancer: Need to move 28.24 GB to make the cluster balanced.
+18/03/31 22:29:33 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:29:33 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:29:36 INFO balancer.Dispatcher: Successfully moved blk_1073770702_29905 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:58 INFO balancer.Dispatcher: Successfully moved blk_1073770835_30038 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:58 INFO balancer.Dispatcher: Successfully moved blk_1073770837_30040 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:58 INFO balancer.Dispatcher: Successfully moved blk_1073770836_30039 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:29:59 INFO balancer.Dispatcher: Successfully moved blk_1073770841_30044 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:30:00 INFO balancer.Dispatcher: Successfully moved blk_1073770701_29904 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:30:11 PM         44             47.64 GB            28.24 GB              10 GB
+18/03/31 22:30:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:30:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:30:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:30:20 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:30:20 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:30:20 INFO balancer.Balancer: Need to move 26.84 GB to make the cluster balanced.
+18/03/31 22:30:20 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:30:20 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:30:36 INFO balancer.Dispatcher: Successfully moved blk_1073770479_29682 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:30:36 INFO balancer.Dispatcher: Successfully moved blk_1073770477_29680 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:30:36 INFO balancer.Dispatcher: Successfully moved blk_1073770475_29678 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:30:38 INFO balancer.Dispatcher: Successfully moved blk_1073770478_29681 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:30:40 INFO balancer.Dispatcher: Successfully moved blk_1073770476_29679 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:30:55 PM         45             48.89 GB            26.84 GB              10 GB
+18/03/31 22:31:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:31:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:31:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:31:05 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:31:05 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:31:05 INFO balancer.Balancer: Need to move 25.86 GB to make the cluster balanced.
+18/03/31 22:31:05 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:31:05 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:31:22 INFO balancer.Dispatcher: Successfully moved blk_1073770936_30139 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:31:32 INFO balancer.Dispatcher: Successfully moved blk_1073770935_30138 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:31:33 INFO balancer.Dispatcher: Successfully moved blk_1073770941_30144 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:31:33 INFO balancer.Dispatcher: Successfully moved blk_1073770934_30137 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:31:33 INFO balancer.Dispatcher: Successfully moved blk_1073770939_30142 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:31:40 PM         46             50.14 GB            25.86 GB              10 GB
+18/03/31 22:31:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:31:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:31:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:31:49 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:31:49 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:31:49 INFO balancer.Balancer: Need to move 25.39 GB to make the cluster balanced.
+18/03/31 22:31:49 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:31:49 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:31:56 INFO balancer.Dispatcher: Successfully moved blk_1073770538_29741 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:31:57 INFO balancer.Dispatcher: Successfully moved blk_1073770535_29738 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:32:07 INFO balancer.Dispatcher: Successfully moved blk_1073770539_29742 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:32:08 INFO balancer.Dispatcher: Successfully moved blk_1073770536_29739 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:32:09 INFO balancer.Dispatcher: Successfully moved blk_1073770537_29740 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:32:24 PM         47             51.39 GB            25.39 GB              10 GB
+18/03/31 22:32:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:32:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:32:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:32:33 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:32:33 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:32:33 INFO balancer.Balancer: Need to move 23.40 GB to make the cluster balanced.
+18/03/31 22:32:33 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:32:33 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:32:36 INFO balancer.Dispatcher: Successfully moved blk_1073769495_28698 with size=62263037 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:32:45 INFO balancer.Dispatcher: Successfully moved blk_1073769493_28696 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:32:47 INFO balancer.Dispatcher: Successfully moved blk_1073769492_28695 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:32:47 INFO balancer.Dispatcher: Successfully moved blk_1073769491_28694 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:32:47 INFO balancer.Dispatcher: Successfully moved blk_1073769494_28697 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:32:48 INFO balancer.Dispatcher: Successfully moved blk_1073769490_28693 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:33:11 PM         48             52.70 GB            23.40 GB              10 GB
+18/03/31 22:33:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:33:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:33:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:33:20 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:33:20 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:33:20 INFO balancer.Balancer: Need to move 22.03 GB to make the cluster balanced.
+18/03/31 22:33:20 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:33:20 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:33:20 INFO balancer.Dispatcher: Successfully moved blk_1073771886_31089 with size=223 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:33:20 INFO balancer.Dispatcher: Successfully moved blk_1073771879_31082 with size=183 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:33:20 INFO balancer.Dispatcher: Successfully moved blk_1073771849_31052 with size=6 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:33:21 INFO balancer.Dispatcher: Successfully moved blk_1073769723_28926 with size=5 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:33:28 INFO balancer.Dispatcher: Successfully moved blk_1073771858_31061 with size=231564544 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:33:31 INFO balancer.Dispatcher: Successfully moved blk_1073771856_31059 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:33:32 INFO balancer.Dispatcher: Successfully moved blk_1073769489_28692 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:33:33 INFO balancer.Dispatcher: Successfully moved blk_1073771857_31060 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:33:33 INFO balancer.Dispatcher: Successfully moved blk_1073771859_31062 with size=231564544 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:33:56 PM         49             53.88 GB            22.03 GB              10 GB
+18/03/31 22:34:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:34:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:34:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:34:05 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:34:05 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:34:05 INFO balancer.Balancer: Need to move 20.52 GB to make the cluster balanced.
+18/03/31 22:34:05 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:34:05 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:34:15 INFO balancer.Dispatcher: Successfully moved blk_1073770382_29585 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:34:15 INFO balancer.Dispatcher: Successfully moved blk_1073770380_29583 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:34:23 INFO balancer.Dispatcher: Successfully moved blk_1073770378_29581 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:34:23 INFO balancer.Dispatcher: Successfully moved blk_1073770379_29582 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:34:26 INFO balancer.Dispatcher: Successfully moved blk_1073770381_29584 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:34:40 PM         50             55.13 GB            20.52 GB              10 GB
+18/03/31 22:34:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:34:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:34:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:34:49 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:34:49 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:34:49 INFO balancer.Balancer: Need to move 19.20 GB to make the cluster balanced.
+18/03/31 22:34:49 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:34:49 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:35:00 INFO balancer.Dispatcher: Successfully moved blk_1073770358_29561 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:03 INFO balancer.Dispatcher: Successfully moved blk_1073770359_29562 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:35:03 INFO balancer.Dispatcher: Successfully moved blk_1073770360_29563 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:35:03 INFO balancer.Dispatcher: Successfully moved blk_1073770356_29559 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:35:03 INFO balancer.Dispatcher: Successfully moved blk_1073770357_29560 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+Mar 31, 2018 10:35:24 PM         51             56.38 GB            19.20 GB              10 GB
+18/03/31 22:35:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:35:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:35:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:35:33 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:35:33 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:35:33 INFO balancer.Balancer: Need to move 18.00 GB to make the cluster balanced.
+18/03/31 22:35:33 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:35:33 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:35:33 INFO balancer.Dispatcher: Successfully moved blk_1073769350_28553 with size=101 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:33 INFO balancer.Dispatcher: Successfully moved blk_1073769349_28552 with size=101 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:54 INFO balancer.Dispatcher: Successfully moved blk_1073772088_31291 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:56 INFO balancer.Dispatcher: Successfully moved blk_1073769486_28689 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:57 INFO balancer.Dispatcher: Successfully moved blk_1073772089_31292 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:58 INFO balancer.Dispatcher: Successfully moved blk_1073772090_31293 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:35:58 INFO balancer.Dispatcher: Successfully moved blk_1073772091_31294 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:36:08 PM         52             57.63 GB            18.00 GB              10 GB
+18/03/31 22:36:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:36:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:36:17 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:36:17 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:36:17 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:36:17 INFO balancer.Balancer: Need to move 16.25 GB to make the cluster balanced.
+18/03/31 22:36:17 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:36:17 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:36:24 INFO balancer.Dispatcher: Successfully moved blk_1073770769_29972 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:36:25 INFO balancer.Dispatcher: Successfully moved blk_1073770767_29970 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:36:29 INFO balancer.Dispatcher: Successfully moved blk_1073770766_29969 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:36:33 INFO balancer.Dispatcher: Successfully moved blk_1073770770_29973 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:36:33 INFO balancer.Dispatcher: Successfully moved blk_1073770768_29971 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:36:52 PM         53             58.88 GB            16.25 GB              10 GB
+18/03/31 22:37:01 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:37:01 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:37:01 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:37:01 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:37:01 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:37:01 INFO balancer.Balancer: Need to move 14.50 GB to make the cluster balanced.
+18/03/31 22:37:01 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:37:01 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:37:06 INFO balancer.Dispatcher: Successfully moved blk_1073770675_29878 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:37:09 INFO balancer.Dispatcher: Successfully moved blk_1073770845_30048 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:37:21 INFO balancer.Dispatcher: Successfully moved blk_1073770846_30049 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:37:21 INFO balancer.Dispatcher: Successfully moved blk_1073770844_30047 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:37:21 INFO balancer.Dispatcher: Successfully moved blk_1073770847_30050 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:37:36 PM         54             60.13 GB            14.50 GB              10 GB
+18/03/31 22:37:45 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:37:45 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:37:45 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:37:45 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:37:45 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:37:45 INFO balancer.Balancer: Need to move 13.51 GB to make the cluster balanced.
+18/03/31 22:37:45 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:37:45 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:37:58 INFO balancer.Dispatcher: Successfully moved blk_1073770430_29633 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:37:58 INFO balancer.Dispatcher: Successfully moved blk_1073770434_29637 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:37:59 INFO balancer.Dispatcher: Successfully moved blk_1073770432_29635 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:38:02 INFO balancer.Dispatcher: Successfully moved blk_1073770431_29634 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:38:02 INFO balancer.Dispatcher: Successfully moved blk_1073770433_29636 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:38:20 PM         55             61.38 GB            13.51 GB              10 GB
+18/03/31 22:38:29 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:38:29 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:38:29 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:38:29 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:38:29 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:38:29 INFO balancer.Balancer: Need to move 11.35 GB to make the cluster balanced.
+18/03/31 22:38:29 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:38:29 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:38:33 INFO balancer.Dispatcher: Successfully moved blk_1073771024_30227 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:38:36 INFO balancer.Dispatcher: Successfully moved blk_1073771875_31078 with size=194693632 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:38:43 INFO balancer.Dispatcher: Successfully moved blk_1073771038_30241 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:38:52 INFO balancer.Dispatcher: Successfully moved blk_1073771023_30226 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:38:53 INFO balancer.Dispatcher: Successfully moved blk_1073771020_30223 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:38:53 INFO balancer.Dispatcher: Successfully moved blk_1073771026_30229 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:38:53 INFO balancer.Dispatcher: Successfully moved blk_1073771027_30230 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:39:11 PM         56             63.06 GB            11.35 GB              10 GB
+18/03/31 22:39:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:39:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:39:20 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:39:20 INFO balancer.Balancer: 1 over-utilized: [192.168.0.21:50010:DISK]
+18/03/31 22:39:20 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:39:20 INFO balancer.Balancer: Need to move 8.84 GB to make the cluster balanced.
+18/03/31 22:39:20 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:39:20 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:39:31 INFO balancer.Dispatcher: Successfully moved blk_1073770390_29593 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:39:32 INFO balancer.Dispatcher: Successfully moved blk_1073770392_29595 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:39:32 INFO balancer.Dispatcher: Successfully moved blk_1073770394_29597 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:39:35 INFO balancer.Dispatcher: Successfully moved blk_1073770391_29594 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:39:35 INFO balancer.Dispatcher: Successfully moved blk_1073770393_29596 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:39:55 PM         57             64.31 GB             8.84 GB              10 GB
+18/03/31 22:40:04 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:40:04 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:40:04 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:40:04 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:40:04 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:40:04 INFO balancer.Balancer: Need to move 7.35 GB to make the cluster balanced.
+18/03/31 22:40:04 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:40:04 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:40:25 INFO balancer.Dispatcher: Successfully moved blk_1073770728_29931 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:40:27 INFO balancer.Dispatcher: Successfully moved blk_1073770732_29935 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:40:27 INFO balancer.Dispatcher: Successfully moved blk_1073770730_29933 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:40:28 INFO balancer.Dispatcher: Successfully moved blk_1073770731_29934 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:40:28 INFO balancer.Dispatcher: Successfully moved blk_1073770779_29982 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:40:39 PM         58             65.56 GB             7.35 GB              10 GB
+18/03/31 22:40:48 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:40:48 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:40:48 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:40:48 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:40:48 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:40:48 INFO balancer.Balancer: Need to move 6.18 GB to make the cluster balanced.
+18/03/31 22:40:48 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:40:48 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:40:55 INFO balancer.Dispatcher: Successfully moved blk_1073772083_31286 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:41:01 INFO balancer.Dispatcher: Successfully moved blk_1073772087_31290 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:41:02 INFO balancer.Dispatcher: Successfully moved blk_1073772085_31288 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:41:02 INFO balancer.Dispatcher: Successfully moved blk_1073772086_31289 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:41:02 INFO balancer.Dispatcher: Successfully moved blk_1073772084_31287 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:41:23 PM         59             66.81 GB             6.18 GB              10 GB
+18/03/31 22:41:32 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:41:32 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:41:32 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:41:32 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:41:32 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:41:32 INFO balancer.Balancer: Need to move 4.92 GB to make the cluster balanced.
+18/03/31 22:41:32 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:41:32 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:41:42 INFO balancer.Dispatcher: Successfully moved blk_1073772082_31285 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:41:43 INFO balancer.Dispatcher: Successfully moved blk_1073770429_29632 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:41:46 INFO balancer.Dispatcher: Successfully moved blk_1073770428_29631 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:41:46 INFO balancer.Dispatcher: Successfully moved blk_1073769487_28690 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:41:46 INFO balancer.Dispatcher: Successfully moved blk_1073769488_28691 with size=268435456 from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+Mar 31, 2018 10:42:07 PM         60             68.06 GB             4.92 GB              10 GB
+18/03/31 22:42:16 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:42:16 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:42:16 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:42:16 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:42:16 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:42:16 INFO balancer.Balancer: Need to move 3.66 GB to make the cluster balanced.
+18/03/31 22:42:16 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:42:16 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:42:19 INFO balancer.Dispatcher: Successfully moved blk_1073770677_29880 with size=71005184 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:42:21 INFO balancer.Dispatcher: Successfully moved blk_1073770679_29882 with size=71005184 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:42:26 INFO balancer.Dispatcher: Successfully moved blk_1073770673_29876 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:42:29 INFO balancer.Dispatcher: Successfully moved blk_1073770671_29874 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:42:31 INFO balancer.Dispatcher: Successfully moved blk_1073770676_29879 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:42:31 INFO balancer.Dispatcher: Successfully moved blk_1073770674_29877 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:42:31 INFO balancer.Dispatcher: Successfully moved blk_1073770672_29875 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:42:56 PM         61             69.45 GB             3.66 GB              10 GB
+18/03/31 22:43:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:43:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:43:05 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:43:05 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:43:05 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:43:05 INFO balancer.Balancer: Need to move 2.27 GB to make the cluster balanced.
+18/03/31 22:43:05 INFO balancer.Balancer: Decided to move 10 GB bytes from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:43:05 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:43:19 INFO balancer.Dispatcher: Successfully moved blk_1073770748_29951 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:43:20 INFO balancer.Dispatcher: Successfully moved blk_1073770658_29861 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:43:21 INFO balancer.Dispatcher: Successfully moved blk_1073770747_29950 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:43:21 INFO balancer.Dispatcher: Successfully moved blk_1073770963_30166 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:43:21 INFO balancer.Dispatcher: Successfully moved blk_1073771048_30251 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:43:40 PM         62             70.70 GB             2.27 GB              10 GB
+18/03/31 22:43:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:43:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:43:49 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:43:49 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:43:49 INFO balancer.Balancer: 1 underutilized: [192.168.0.20:50010:DISK]
+18/03/31 22:43:49 INFO balancer.Balancer: Need to move 1.01 GB to make the cluster balanced.
+18/03/31 22:43:49 INFO balancer.Balancer: Decided to move 9.43 GB bytes from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:43:49 INFO balancer.Balancer: Decided to move 582.21 MB bytes from 192.168.0.21:50010:DISK to 192.168.0.20:50010:DISK
+18/03/31 22:43:49 INFO balancer.Balancer: Will move 10 GB in this iteration
+18/03/31 22:43:54 INFO balancer.Dispatcher: Successfully moved blk_1073770669_29872 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.22:50010
+18/03/31 22:44:02 INFO balancer.Dispatcher: Successfully moved blk_1073770435_29638 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:44:03 INFO balancer.Dispatcher: Successfully moved blk_1073770763_29966 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:44:03 INFO balancer.Dispatcher: Successfully moved blk_1073770670_29873 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+18/03/31 22:44:03 INFO balancer.Dispatcher: Successfully moved blk_1073770805_30008 with size=268435456 from 192.168.0.22:50010:DISK to 192.168.0.20:50010:DISK through 192.168.0.21:50010
+Mar 31, 2018 10:44:24 PM         63             71.95 GB             1.01 GB              10 GB
+18/03/31 22:44:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.22:50010
+18/03/31 22:44:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.21:50010
+18/03/31 22:44:33 INFO net.NetworkTopology: Adding a new node: /default-rack/192.168.0.20:50010
+18/03/31 22:44:33 INFO balancer.Balancer: 0 over-utilized: []
+18/03/31 22:44:33 INFO balancer.Balancer: 0 underutilized: []
+The cluster is balanced. Exiting...
+Mar 31, 2018 10:44:33 PM         64             71.95 GB                 0 B               -1 B
+Mar 31, 2018 10:44:33 PM Balancing took 44.04238333333333 minutes

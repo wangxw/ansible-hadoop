@@ -1,0 +1,4 @@
+jdk_download_filename: jdk-8u91-linux-x64.tar
+jdk_version: jdk1.8.0_91
+java_dir: /usr/local/java
+java_home: "{{ java_dir }}/{{ jdk_version }}"

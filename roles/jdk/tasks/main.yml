@@ -1,0 +1,13 @@
+---
+  - name: Uninstalling the openjdk
+    yum: pkg=openjdk state=absent
+  - name: Make the java dir
+    file: path={{ java_dir }} state=directory  
+  - name: Unarchive JDK
+    unarchive: src="file_archives/{{ jdk_download_filename }}" dest={{ java_dir }}
+      creates="{{ java_dir }}/{{ jdk_version }}"
+  - name: Setting the Java to the system env
+    template: src=jdk.sh dest=/etc/profile.d/
+      owner=root group=root  mode=0644
+  - name: Source the /etc/profole
+    shell: source /etc/profile 

@@ -1,0 +1,11 @@
+hadoop_user: hadoop
+hadoop_group: hadoop
+hadoop_download_filename: hadoop-3.1.0.tar.gz
+hadoop_version: hadoop_3.1.0
+hadoop_install_dir: /home/hadoop/install
+hadoop_home: "{{ hadoop_install_dir }}/{{ hadoop_version }}"
+
+fs_default_port: 9000
+io_file_buffer_size: 131072
+hadoop_tmp_dir: /data/hadoop/tmp
+

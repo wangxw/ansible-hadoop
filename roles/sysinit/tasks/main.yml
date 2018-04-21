@@ -1,0 +1,17 @@
+---
+  - name: Setting the swappiness
+    shell: sysctl vm.swappiness={{ kernel_swappiness }} 
+  - name: Setting the disks reserver space percent
+    shell: tune2fs -m {{ disk_reserve_percent }} /dev/sdb1 
+  - name: Update limits.conf on the server
+    template: src=limits.conf dest=/etc/security/limits.conf
+      owner=root group=root backup=yes mode=0644
+  - name: Update '90-nproc.conf' on the server
+    template: src=90-nproc.conf dest=/etc/security/limits.d/
+      owner=root group=root backup=yes mode=0644
+  - name: Turn off the hugepage memory manage
+    shell: echo never > /sys/kernel/mm/redhat_transparent_hugepage/defrag && \
+           echo never >  /sys/kernel/mm/redhat_transparent_hugepage/enabled
+  - name: Setting the vfs cache
+    shell: sysctl vm.vfs_cache_pressure={{ vfs_cache_pressure }}
+

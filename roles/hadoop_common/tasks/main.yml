@@ -1,0 +1,17 @@
+---
+  - name: Create hadoop group
+    group: name={{ hadoop_group }} state=present
+  - name: Create hadoop user
+    user: name={{ hadoop_user }} group={{ hadoop_group }} shell=/bin/bash 
+  - name: Make the hadoop dir
+    file: path={{ hadoop_install_dir }} state=directory 
+      owner={{ hadoop_user }} group={{ hadoop_group }}
+  - name: Unarchive Haodop
+    unarchive: src="file_archives/{{ hadoop_download_filename }}" dest={{ hadoop_install_dir }}
+      creates="{{ hadoop_install_dir }}/{{ hadoop_version }}"
+      owner={{ hadoop_user }} group={{ hadoop_group }}
+  - name: Setting the Hadoop to the system env
+    template: src=hadoop.sh dest=/etc/profile.d/
+      owner=root group=root  mode=0644
+  - name: Source the /etc/profile
+    shell: source /etc/profile 
