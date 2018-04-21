@@ -10,6 +10,14 @@
     unarchive: src="file_archives/{{ hadoop_download_filename }}" dest={{ hadoop_install_dir }}
       creates="{{ hadoop_install_dir }}/{{ hadoop_version }}"
       owner={{ hadoop_user }} group={{ hadoop_group }}
+  - name: Copy config file 
+    template: src=config/{{ item }} dest="{{ hadoop_install_dir }}/{{ hadoop_version }}/etc/hadoop/" owner={{ hadoop_user }} group={{ hadoop_group }}
+    with_items: 
+    - core-site.xml
+    - hdfs-site.xml
+    - yarn-site.xml
+    - mapred-site.xml
+    - slaves
   - name: Setting the Hadoop to the system env
     template: src=hadoop.sh dest=/etc/profile.d/
       owner=root group=root  mode=0644

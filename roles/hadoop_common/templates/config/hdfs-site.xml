@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License. See accompanying LICENSE file.
--->
-
-<!-- Put site-specific property overrides in this file. -->
-
 <configuration>
    <property>
-        <name>dfs.namenode.name.dir</name>
-        <value>/data/hadoop/name</value>
+	<name>dfs.namenode.name.dir</name>
+	<value>{% for server in hdfs_name_dir %}{% if not loop.first and flag==1 %},{% else %}{% set flag=1 %}{% endif %}{{ server }}{% endfor %}</value>
     </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/data/hadoop/data</value>
+    </property>
+    <property>
+      <name>dfs.datanode.failed.volumes.tolerated</name>
+      <value>5</value>
+   </property>
+    <property>
+   <name>dfs.datanode.du.reserved</name>
+   <value>107374182400</value>
+  </property>
+ <property>
+    <name>dfs.datanode.du.pct</name>
+    <value>0.93f</value>
+  </property>
+   <property>
+        <name>dfs.hosts.exclude</name>
+        <value>{{ hadoop_home }}/etc/hadoop/dfs.hosts.exclude</value>
+   </property>
    <property>
         <name>dfs.blocksize</name>
         <value>268435456</value>
@@ -29,12 +33,12 @@
         <name>dfs.namenode.handler.count</name>
         <value>100</value>
     </property>
-   <property>
-        <name>dfs.datanode.data.dir</name>
-        <value>/data/hadoop/data</value>
+    <property>
+        <name>dfs.namenode.service.handler.count</name>
+        <value>100</value>
     </property>
-   <property>
-        <name>dfs.hosts.exclude</name>
-        <value>{{ hadoop_home }}/etc/hadoop/dfs.hosts.exclude</value>
+    <property>
+        <name>dfs.datanode.handler.count</name>
+        <value>40</value>
     </property>
 </configuration>

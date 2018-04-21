@@ -41,10 +41,6 @@
 # leading 0s:
 
 ## db-[99:101]-node.example.com
-[hadoop]
-YS01
-YS02
-YS03
 [namenodes]
 YS01
 [datanodes]

@@ -18,8 +18,8 @@
 
 <configuration>
    <property>
-        <name>fs.default.name</name>
-        <value>hdfs://{% for server in groups['namenodes'] %}{% if not loop.first and flag==1 %},{% else %}{% set flag=1 %}{% endif %}{{ server }}{% endfor %}:{{ fs_default_port }}</value>
+	<name>fs.default.name</name>
+	<value>hdfs://{% for server in groups['namenodes'] %}{% if not loop.first and flag==1 %},{% else %}{% set flag=1 %}{% endif %}{{ server }}{% endfor %}:{{ fs_default_port }}</value>
     </property>
    <property>
         <name>io.file.buffer.size</name>
@@ -29,4 +29,16 @@
         <name>hadoop.tmp.dir</name>
         <value>{{ hadoop_tmp_dir }}</value>
     </property>
+   <property>
+        <name>io.file.buffer.size</name>
+        <value>{{ io_file_buffer_size }}</value>
+    </property>
+   <property>
+        <name>hadoop.tmp.dir</name>
+        <value>{{ hadoop_tmp_dir }}</value>
+   </property>
+        <property>
+        <name>fs.trash.interval</name>
+        <value>{{ fs_trash_interval}}</value>
+   </property>
 </configuration>

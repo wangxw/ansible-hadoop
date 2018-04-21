@@ -1,0 +1,5 @@
+---
+  - name: Make the hadoop name dir
+    file: path={{ item }} state=directory 
+      owner={{ hadoop_user }} group={{ hadoop_group }}
+    with_items: "{{ hdfs_name_dir }}"
